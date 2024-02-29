@@ -1,4 +1,6 @@
 import {useState, useEffect} from "react";
+import dividerImg from './images/pattern-divider-desktop.svg';
+import diceImg from './images/icon-dice.svg';
 
 function App() {
   const [quotes, setQuotes] = useState('');
@@ -28,11 +30,11 @@ function App() {
               <p>{quotes.advice}</p>
 
             <div className="divider-image">
-              <img src="images/pattern-divider-desktop.svg" alt="" />
+              <img src={dividerImg} alt="" />
             </div>
 
             <button className="btn" onClick={handleQuote}>
-              <img src="images/icon-dice.svg" alt="" />
+              <img src={diceImg} alt="" />
             </button>
         </div>
       </div>
